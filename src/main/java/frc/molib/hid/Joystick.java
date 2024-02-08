@@ -18,6 +18,8 @@ public class Joystick extends GenericHID {
 	 */
 	public Joystick(int port) { super(port); }
 
+    public void configYAxisInverted(boolean isInverted) { mIsYAxisInverted = isInverted; }
+
 	/**
 	 * Read the value of the axis with the deadzone applied.
 	 *

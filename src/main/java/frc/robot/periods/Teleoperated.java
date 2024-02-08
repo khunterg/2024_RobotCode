@@ -63,8 +63,10 @@ public class Teleoperated {
      */
     
     public static void init(){
-       mSelectedZoomyPercentage  = chsZoomyPercentage.getSelected();
-       ButtonManager.clearFlags();
+        ctlDrive_L.configYAxisInverted(true);
+        ctlDrive_R.configYAxisInverted(true);
+        mSelectedZoomyPercentage  = chsZoomyPercentage.getSelected();
+        ButtonManager.clearFlags();
     }
     /**
      * very important variable, trust me.

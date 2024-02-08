@@ -38,7 +38,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotInit() {
-
+    enableLiveWindowInTest(true);
       try{
         camMain = CameraServer.startAutomaticCapture("Main Camera", 0);
         camMain.setFPS(15);
